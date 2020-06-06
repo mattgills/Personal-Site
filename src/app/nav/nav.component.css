@@ -1,0 +1,14 @@
+
+.button-row {
+    position: absolute;
+    right: 50px;
+}
+
+.button-row button {
+    margin-right: 8px;
+}
+
+.compressed-menu {
+    position: absolute;
+    right: 25px;
+}

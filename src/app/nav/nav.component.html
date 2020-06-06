@@ -1,0 +1,24 @@
+<mat-toolbar class="header" color="primary">
+  <div>
+    <h1 matBadge="11">
+      Matthew Gillespie
+    </h1>
+  </div>
+  <div class="button-row" *ngIf="!(isHandset$ | async)">
+    <button mat-raised-button color="accent" [routerLink]="['/about']">About</button>
+    <button mat-raised-button color="accent" [routerLink]="['/resume']">Resume</button>
+    <button mat-raised-button color="accent" [routerLink]="['/projects']">Projects</button>
+    <button mat-raised-button color="accent" [routerLink]="['/contact']">Contact</button>
+  </div>
+  <div class="compressed-menu" *ngIf="isHandset$ | async">
+    <button mat-icon-button color="accent" [matMenuTriggerFor]="menu" aria-label="Example icon button with a menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item [routerLink]="['/about']">About</button>
+      <button mat-menu-item [routerLink]="['/resume']">Resume</button>
+      <button mat-menu-item [routerLink]="['/projects']">Projects</button>
+      <button mat-menu-item [routerLink]="['/contact']">Contact</button>
+    </mat-menu>
+  </div>
+</mat-toolbar>
