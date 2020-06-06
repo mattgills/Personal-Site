@@ -18,4 +18,11 @@ export class NavComponent {
 
   constructor(private breakpointObserver: BreakpointObserver) {}
 
+  navGitHub() {
+    window.location.href = 'https://github.com/mattgills'
+  }
+  
+  navLinkedin() {
+    window.location.href = 'https://linkedin.com/in/matthew-gillespie-37054a102'
+  }
 }

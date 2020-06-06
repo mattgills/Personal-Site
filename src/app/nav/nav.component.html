@@ -9,6 +9,13 @@
     <button mat-raised-button color="accent" [routerLink]="['/resume']">Resume</button>
     <button mat-raised-button color="accent" [routerLink]="['/projects']">Projects</button>
     <button mat-raised-button color="accent" [routerLink]="['/contact']">Contact</button>
+    <button mat-raised-button color="accent" [routerLink]="['/contact']">Contact</button>
+    <button mat-mini-fab color="accent" (click)="navGitHub()">
+      <mat-icon svgIcon="github"></mat-icon>
+    </button>
+    <button mat-mini-fab color="accent" (click)="navLinkedin()">
+      <mat-icon svgIcon="linkedin"></mat-icon>
+    </button>
   </div>
   <div class="compressed-menu" *ngIf="isHandset$ | async">
     <button mat-icon-button color="accent" [matMenuTriggerFor]="menu" aria-label="Example icon button with a menu icon">
@@ -19,6 +26,8 @@
       <button mat-menu-item [routerLink]="['/resume']">Resume</button>
       <button mat-menu-item [routerLink]="['/projects']">Projects</button>
       <button mat-menu-item [routerLink]="['/contact']">Contact</button>
+      <button mat-menu-item (click)="navGitHub()">GitHub</button>
+      <button mat-menu-item (click)="navLinkedin()">GitHub</button>
     </mat-menu>
   </div>
 </mat-toolbar>
