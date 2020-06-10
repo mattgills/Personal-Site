@@ -18,11 +18,15 @@ export class NavComponent {
 
   constructor(private breakpointObserver: BreakpointObserver) {}
 
+  openResume() {
+    window.open('/assets/MatthewJGillespieResume.pdf', '_blank');
+  }
+
   navGitHub() {
-    window.location.href = 'https://github.com/mattgills'
+    window.open('https://github.com/mattgills', '_blank');
   }
   
   navLinkedin() {
-    window.location.href = 'https://linkedin.com/in/matthew-gillespie-37054a102'
+    window.open('https://linkedin.com/in/matthew-gillespie-37054a102', '_blank');
   }
 }

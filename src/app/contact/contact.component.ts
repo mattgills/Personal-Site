@@ -12,4 +12,11 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  navGitHub() {
+    window.open('https://github.com/mattgills', '_blank');
+  }
+  
+  navLinkedin() {
+    window.open('https://linkedin.com/in/matthew-gillespie-37054a102', '_blank');
+  }
 }

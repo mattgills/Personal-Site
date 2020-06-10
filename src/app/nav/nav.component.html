@@ -5,10 +5,10 @@
     </h1>
   </div>
   <div class="button-row" *ngIf="!(isHandset$ | async)">
-    <button mat-raised-button color="accent" [routerLink]="['/about']">About</button>
-    <button mat-raised-button color="accent" [routerLink]="['/resume']">Resume</button>
-    <button mat-raised-button color="accent" [routerLink]="['/projects']">Projects</button>
-    <button mat-raised-button color="accent" [routerLink]="['/contact']">Contact</button>
+    <button mat-button [routerLink]="['/about']">About</button>
+    <button mat-button [routerLink]="['/experience']">Experience</button>
+    <button mat-button [routerLink]="['/contact']">Contact</button>
+    <button mat-raised-button color="accent" (click)="openResume()">Resume</button>
     <button mat-mini-fab color="accent" (click)="navGitHub()">
       <mat-icon svgIcon="github"></mat-icon>
     </button>
@@ -22,9 +22,9 @@
     </button>
     <mat-menu #menu="matMenu">
       <button mat-menu-item [routerLink]="['/about']">About</button>
-      <button mat-menu-item [routerLink]="['/resume']">Resume</button>
-      <button mat-menu-item [routerLink]="['/projects']">Projects</button>
+      <button mat-menu-item [routerLink]="['/experience']">Experience</button>
       <button mat-menu-item [routerLink]="['/contact']">Contact</button>
+      <button mat-menu-item (click)="openResume()">Resume</button>
       <button mat-menu-item (click)="navGitHub()">GitHub</button>
       <button mat-menu-item (click)="navLinkedin()">LinkedIn</button>
     </mat-menu>

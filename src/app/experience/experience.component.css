@@ -1,9 +1,13 @@
+.mat-card {
+    width: 100%;
+}
+
 .mat-grid-list {
     margin-top: 50px;
 }
 
-.mat-card {
-    width: 100%;
+.mat-list-item-span {
+    margin-left: 20px;
 }
 
 li {
