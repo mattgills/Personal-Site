@@ -1,17 +1,21 @@
-.mat-card {
-    width: 100%;
+li {
+    display: block;
+    width: 50%;
+    float: left;
 }
 
-.mat-grid-list {
-    margin-top: 50px;
+
+.mat-card {
+    height: 100%;
 }
 
 .mat-list-item-span {
     margin-left: 20px;
 }
 
-li {
-    display: block;
-    width: 50%;
-    float: left;
+@media only screen and (max-width: 600px) {
+    .mat-list-item {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }

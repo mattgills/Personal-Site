@@ -1,133 +1,32 @@
-<div *ngIf="!(isHandset$ | async) && !(isSmall$ | async)">
-    <mat-grid-list cols="7" rowHeight="1:1">
-        <!-- Row 1 -->
-        <mat-grid-tile colspan="3"></mat-grid-tile>
-        <mat-grid-tile colspan="1" rowspan="1" style="border-radius: 50%;">
-            <img mat-card-image src="../../assets/headshot small.jpg" alt="Headshot">
-        </mat-grid-tile>
-        <mat-grid-tile colspan="3"></mat-grid-tile>
-        <!-- Row 2 -->
-        <mat-grid-tile colspan="2"></mat-grid-tile>
-        <mat-grid-tile colspan="3" rowspan="2">
-            <mat-card>
-                <mat-card-content>
-                    <h1>Hi, I'm Matt, a Full Stack Developer in the New York City area.</h1>
-                    <br>
-                    <h3>
-                        I enjoy working with all aspects of the technology stack, whether that be the user experience, database schema, or the API that glues them together.
-                        My goal is to always develop and contribute to products that are both user friendly and performant.
-                    </h3>
-                    <br>
-                    <h3>
-                        I consider myself a lifelong learner, who aims to continuously grow in both hard and soft skills.
-                        Here are a few technologies that I have been working with recently:
-                    </h3>
-                    <ul>
-                        <li>Node.js</li>
-                        <li>Typescript</li>
-                        <li>Angular / NgRx</li>
-                        <li>Vue.js / Vuex</li>
-                        <li>MongoDB</li>
-                        <li>PostgreSQL</li>
-                    </ul>
-                </mat-card-content>
-            </mat-card>
-        </mat-grid-tile>
-        <mat-grid-tile colspan="2"></mat-grid-tile>
-    </mat-grid-list>
-    <!-- <mat-grid-list cols="7" rowHeight="1:1">
-        <mat-grid-tile colspan="7"></mat-grid-tile>
-        <mat-grid-tile colspan="2"></mat-grid-tile>
-        <mat-grid-tile colspan="1" rowspan="1" style="border-radius: 50%;">
-            <img mat-card-image src="../../assets/headshot small.jpg" alt="Headshot">
-        </mat-grid-tile>
-        <mat-grid-tile colspan="2" rowspan="2">
-            <mat-card>
-                <mat-card-content>
-                    <div markdown ngPreserveWhitespaces>
-                        Hello, I'm Matt, a Full Stack Developer based in New York City area.
-                    
-                        I enjoy getting my hands on all aspects of the technology stack.  My goal is to always build and contribute to products that provide user friendly and performant experiences.
-                    
-                        After graduating from Penn State University with degrees in both Electrical Engineering and German, I joined the Engineering Leadership Development Program at Siemens.  This program provided me many great opportunities, and it was this program that led me to the world of software development.  During my time as a Full Stack Developer at Siemens, I contributed to wide variety of interesting projects.
-                    
-                        I consider myself a lifelong learner, and am always seeking to improve.  I recognize that skills are built through experience and practice.  They will not appear overnight.  My goal is to never become complacent, and to always seek new ways of thinking.
-                    </div>
-                </mat-card-content>
-            </mat-card>
-        </mat-grid-tile>
-    </mat-grid-list> -->
+<div>
+    <div class="row">
+        <div class="col-9 offset-1 col-md-3 offset-md-3 col-lg-2 offset-lg-5">
+            <img src="../../assets/headshot small.jpg" alt="Headshot">
+        </div>
+    </div>
+    <div class="row">
+        <mat-card class="col-9 offset-1 col-lg-8 offset-lg-2">
+            <mat-card-content>
+                <h1>Hi, I'm Matt, a Full Stack Developer in the New York City area.</h1>
+                <br>
+                <h3>
+                    I enjoy working with all aspects of the technology stack, whether that be the user experience, database schema, or the API that glues them together.
+                    My goal is to always develop and contribute to products that are both user friendly and performant.
+                </h3>
+                <br>
+                <h3>
+                    I consider myself a lifelong learner, who aims to continuously grow in both hard and soft skills.
+                    Here are a few technologies that I have been working with recently:
+                </h3>
+                <ul>
+                    <li>Node.js</li>
+                    <li>Typescript</li>
+                    <li>Angular / NgRx</li>
+                    <li>Vue.js / Vuex</li>
+                    <li>MongoDB</li>
+                    <li>PostgreSQL</li>
+                </ul>
+            </mat-card-content>
+        </mat-card>
+    </div>
 </div>
-<div *ngIf="isSmall$ | async">
-    <mat-grid-list cols="7" rowHeight="1:3">
-        <mat-grid-tile colspan="2"></mat-grid-tile>
-        <mat-grid-tile colspan="3" style="border-radius: 50%;">
-            <img mat-card-image src="../../assets/headshot small.jpg" alt="Headshot">
-        </mat-grid-tile>
-        <mat-grid-tile colspan="2"></mat-grid-tile>
-        <mat-grid-tile colspan="1"></mat-grid-tile>
-        <mat-grid-tile colspan="5" rowspan="2">
-            <mat-card>
-                <mat-card-content>
-                    <h1>Hi, I'm Matt, a Full Stack Developer in the New York City area.</h1>
-                    <br>
-                    <h3>
-                        I enjoy working with all aspects of the technology stack, whether that be the user experience, database schema, or the API that glues them together.
-                        My goal is to always develop and contribute to products that are both user friendly and performant.
-                    </h3>
-                    <br>
-                    <h3>
-                        I consider myself a lifelong learner, who aims to continuously grow in both hard and soft skills.
-                        Here are a few technologies that I have been working with recently:
-                    </h3>
-                    <ul>
-                        <li>Node.js</li>
-                        <li>Typescript</li>
-                        <li>Angular / NgRx</li>
-                        <li>Vue.js / Vuex</li>
-                        <li>MongoDB</li>
-                        <li>PostgreSQL</li>
-                    </ul>
-                </mat-card-content>
-            </mat-card>
-        </mat-grid-tile>
-        <mat-grid-tile colspan="1"></mat-grid-tile>
-    </mat-grid-list>
-</div>
-<div *ngIf="isHandset$ | async">
-    <mat-grid-list cols="7" rowHeight="1:5">
-        <mat-grid-tile colspan="1"></mat-grid-tile>
-        <mat-grid-tile colspan="5" style="border-radius: 50%;">
-            <img mat-card-image src="../../assets/headshot small.jpg" alt="Headshot">
-        </mat-grid-tile>
-        <mat-grid-tile colspan="1"></mat-grid-tile>
-        <mat-grid-tile colspan="1"></mat-grid-tile>
-        <mat-grid-tile colspan="5" rowspan="3">
-            <mat-card>
-                <mat-card-content>
-                    <h1>Hi, I'm Matt, a Full Stack Developer in the New York City area.</h1>
-                    <br>
-                    <h3>
-                        I enjoy working with all aspects of the technology stack, whether that be the user experience, database schema, or the API that glues them together.
-                        My goal is to always develop and contribute to products that are both user friendly and performant.
-                    </h3>
-                    <br>
-                    <h3>
-                        I consider myself a lifelong learner, who aims to continuously grow in both hard and soft skills.
-                        Here are a few technologies that I have been working with recently:
-                    </h3>
-                    <ul>
-                        <li>Node.js</li>
-                        <li>Typescript</li>
-                        <li>Angular / NgRx</li>
-                        <li>Vue.js / Vuex</li>
-                        <li>MongoDB</li>
-                        <li>PostgreSQL</li>
-                    </ul>
-                </mat-card-content>
-            </mat-card>
-        </mat-grid-tile>
-        <mat-grid-tile colspan="1"></mat-grid-tile>
-    </mat-grid-list>
-</div>
-

@@ -1,9 +1,7 @@
-.mat-grid-list {
-    margin-top: 50px;
-}
-
-.mat-card {
-    width: 100%;
+img {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
 }
 
 li {

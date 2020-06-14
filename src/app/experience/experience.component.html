@@ -1,31 +1,25 @@
-<div>
-    <mat-grid-list cols="7" rowHeight="1:1.5">
-        <div *ngFor="let experience of experiences">
-            <mat-grid-tile colspan="2"></mat-grid-tile>
-            <mat-grid-tile colspan="3" rowspan="1">
-                <mat-card>
-                    <mat-card-header>
-                        <mat-card-title class="mat-display-3">{{ experience.title }} <span> @ {{ experience.company }}</span></mat-card-title>
-                        <mat-card-subtitle>{{ experience.time }}</mat-card-subtitle>
-                    </mat-card-header>
-                    <mat-divider></mat-divider>
-                    <mat-card-content>
-                        <mat-list>
-                            <mat-list-item *ngFor="let responsibility of experience.responsibilities">
-                                <mat-icon>play_arrow</mat-icon>
-                                <span class="mat-list-item-span">{{ responsibility }}</span>
-                            </mat-list-item>
-                        </mat-list>
-                    </mat-card-content>
-                    <mat-divider></mat-divider>
-                    <mat-card-actions>
-                        <ul>
-                            <li *ngFor="let tech of experience.technologies">{{ tech }}</li>
-                        </ul>
-                      </mat-card-actions>
-                </mat-card>
-            </mat-grid-tile>
-            <mat-grid-tile colspan="2"></mat-grid-tile>
-        </div>
-    </mat-grid-list>
+<div class="row" *ngFor="let experience of experiences">
+    <div class="col-sm-10 offset-sm-1 col-lg-6 offset-lg-3">
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title class="mat-display-3">{{ experience.title }} <span> @ {{ experience.company }}</span></mat-card-title>
+                <mat-card-subtitle>{{ experience.time }}</mat-card-subtitle>
+            </mat-card-header>
+            <mat-divider></mat-divider>
+            <mat-card-content>
+                <mat-list>
+                    <mat-list-item *ngFor="let responsibility of experience.responsibilities">
+                        <mat-icon>play_arrow</mat-icon>
+                        <span class="mat-list-item-span">{{ responsibility }}</span>
+                    </mat-list-item>
+                </mat-list>
+            </mat-card-content>
+            <mat-divider></mat-divider>
+            <mat-card-actions>
+                <ul>
+                    <li *ngFor="let tech of experience.technologies">{{ tech }}</li>
+                </ul>
+            </mat-card-actions>
+        </mat-card>
+    </div>
 </div>
