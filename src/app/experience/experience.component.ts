@@ -15,7 +15,7 @@ export class ExperienceComponent implements OnInit {
         'Owned development of the Siemens Edge Data Collector Unit (DCU), which is and Industrial IoT Edge Device',
         `Refactored the Edge DCU's project structure to leverage asynchronous features of Node.js`,
         'Created a reliable production environment for the Edge DCU using Ubuntu Server and PM2',
-        'Owned development of a cloud hosted building management application, which allows users',
+        'Owned development of a cloud hosted building management application, which allows building owners and tenants to have greater transparency into energy usage and cost',
       ],
       technologies: [
         'Node.js',
